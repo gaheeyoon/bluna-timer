@@ -173,7 +173,7 @@ const validate = () => {
 }
 
 const changeVideo = () => {
-    let videoSource = "./src/res/mov/" + Math.floor((Math.random() * 12) + 1) + ".mp4";
+    let videoSource = "./src/res/mov/" + Math.floor((Math.random() * 11) + 1) + ".mp4";
 
     let source = document.createElement("source");
     source.setAttribute('src', videoSource);
