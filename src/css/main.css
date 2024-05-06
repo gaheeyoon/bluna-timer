@@ -49,10 +49,12 @@ body {
     margin-top: -35px;
 }
 
+/* 제목 */
 .main-wrapper #title {
     font-size: 30px;
 }
 
+/* 설정 창 */
 #setting-bar {
     width: 240px;
     background-color: rgba(0, 0, 0, 0.5);
