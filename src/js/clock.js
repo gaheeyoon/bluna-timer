@@ -63,8 +63,8 @@ function onPlayerStateChange(event) {
             currentVideoNum = 0;
         }
 
-        player.loadVideoById(videoUrlList[currentVideoNum]);
-        $title.textContent = videoNameList[currentVideoNum] + " by bluna";
+        player.loadVideoById(videoUrlList[currentVideoNum].url);
+        $title.textContent = videoUrlList[currentVideoNum].title + " by bluna";
     }
 }
 
