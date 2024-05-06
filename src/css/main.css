@@ -1,0 +1,133 @@
+:root {
+    --xlarge: 170px;
+    --large: 28px;
+    --medium: 18px;
+    --small: 16px;
+    --xsmall: 14px;
+    --xxsmall: 10px;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+}
+
+#backgroundVideo {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+#cover {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+}
+
+#main-container .main-wrapper {
+    text-align: center;
+    z-index: 1000;
+}
+
+/* 시계 */
+.main-wrapper #time {
+    font-size: var(--xlarge);
+    font-weight: 400;
+    margin-top: -35px;
+}
+
+.main-wrapper #title {
+    font-size: 30px;
+}
+
+#setting-bar {
+    width: 240px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    min-height: calc(100vh - 20px);
+    padding: 10px 30px;
+    color: white;
+    display: none;
+}
+
+#player {
+    display: none;
+}
+
+/* 설정 폼*/
+#setting-item-input-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: rgba(241, 241, 241, 0.2) 0.5px solid;
+    font-size: var(--small);
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+#setting-item-input-form .label {
+    margin-bottom: 10px;
+    font-size: var(--medium);
+    width: 25px;
+    float: right;
+    padding-top: 3px;
+}
+
+#setting-item-input-form input {
+    width: 160px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#setting-icon-area {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#setting-icon-area i {
+    font-size: var(--large);
+    margin-right: 10px;
+}
+
+#setting-icon-area i {
+    color: rgba(255, 255, 255);
+}
+
+#setting-icon-area i:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#setting-icon-area #pause-btn, #setting-icon-area #close-btn {
+    display: none;
+}
+
+/* 카피라이트 */
+#copyright {
+    font-size: var(--small);
+    position: fixed;
+    bottom: 0;
+    max-width: 800px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: center;
+}

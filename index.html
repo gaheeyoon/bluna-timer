@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Study Timer</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/b2185014d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&disp
+lay=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <div id="player"></div>
+
+    <div id="main-container">
+      <video width="100%" id="backgroundVideo" autoplay loop></video>
+      <div id="cover"></div>
+
+      <div class="main-wrapper">
+        <div class="timer-info">
+          <div id="time">01:00:00</div>
+        </div>
+        <div id="title">April by 청월령</div>
+      </div>
+      <div id="copyright">@copyright 2024. bluna piano.</div>
+    </div>
+
+    <div id="setting-bar">
+      <div id="setting-item-input-form">
+        <input class="input" id="hour" value="1" />
+        <div class="label">시</div>
+        <input class="input" id="minute" />
+        <div class="label">분</div>
+        <input class="input" id="second" />
+        <div class="label">초</div>
+      </div>
+    </div>
+
+    <div id="setting-icon-area">
+      <i class="fa-solid fa-play" id="play-btn"></i>
+      <i class="fa-solid fa-pause" id="pause-btn"></i>
+      <i class="fa-solid fa-gear" id="setting-btn"></i>
+      <i class="fa-solid fa-close" id="close-btn"></i>
+      <a href="https://www.youtube.com/@BLUNA_Piano" target="_blank"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a href="https://www.instagram.com/bluna_piano/" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/setting-toggle.js"></script>
+  </body>
+</html>
