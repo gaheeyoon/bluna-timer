@@ -1,7 +1,7 @@
 let $video = document.getElementById("backgroundVideo");    // 비디오
 
 const changeVideo = () => {
-    let videoSource = "./src/res/mov/" + Math.floor((Math.random() * 11) + 1) + ".mp4";
+    let videoSource = "./src/res/mov/" + Math.floor((Math.random() * 10) + 1) + ".mp4";
 
     let source = document.createElement("source");
     source.setAttribute('src', videoSource);

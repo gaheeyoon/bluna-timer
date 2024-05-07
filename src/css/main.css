@@ -107,6 +107,12 @@ body {
     right: 10px;
 }
 
+#setting-icon-area span {
+    font-size: var(--large);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 #setting-icon-area i {
     font-size: var(--large);
     margin-right: 10px;
