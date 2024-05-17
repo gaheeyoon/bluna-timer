@@ -3,6 +3,10 @@
   <head>
     <title>study with bluna piano</title>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * 'self'; form-action 'none'; script-src * 'self' 'wasm-unsafe-eval' 'unsafe-eval' 'unsafe-hashes' 'inline-speculation-rules' https://www.youtube.com/* 'nonce-394726394026385629'; script-src-elem * 'self' https://www.youtube.com/; style-src * 'self' 'unsafe-inline'; "
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,11 +54,13 @@
         ><i class="fa-brands fa-instagram"></i
       ></a>
     </div>
-    <script src="src/js/fontawesome.js"></script>
-    <script src="src/js/background-video.js"></script>
-    <script src="src/js/background-music.js"></script>
-    <script src="src/js/setting-toggle.js"></script>
-    <script src="src/js/clock.js"></script>
-    <script src="src/js/player.js"></script>
+    <script type="text/javascript" src="src/js/fontawesome.js"></script>
+    <script type="text/javascript" src="src/js/background-video.js"></script>
+    <script type="text/javascript" src="src/js/iframe-api.js"></script>
+    <script type="text/javascript" src="src/js/www-widgetapi.js"></script>
+    <script type="text/javascript" src="src/js/background-music.js"></script>
+    <script type="text/javascript" src="src/js/setting-toggle.js"></script>
+    <script type="text/javascript" src="src/js/clock.js"></script>
+    <script type="text/javascript" src="src/js/player.js"></script>
   </body>
 </html>

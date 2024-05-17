@@ -2,10 +2,13 @@
     "name": "study with bluna piano",
     "description": "Made by bluna piano, GaheeYoon",
     "version": "1.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
-    "host_permissions": ["<all_urls>"],
-    "content_security_policy": "script-src 'self' https://kit.fontawesome.com https://www.youtube.com/iframe_api https://www.youtube.com; object-src 'self'"
+    "permissions": ["<all_urls>"],
+    "web_accessible_resources": [{
+        "resources": ["background-music.js"],
+        "matches": ["<all_urls>"]
+    }]
 }

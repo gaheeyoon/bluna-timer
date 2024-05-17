@@ -1,9 +1,4 @@
 let $title = document.getElementById("title");    // 제목
-let tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-let firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 let player;
 
 let videoUrlList = [ {title: 'April', url: 'yRTnfhynaRc'}, {title: 'Falling petals', url: 'igXk6QiM7k0'}, {title: 'Swimming', url: 'oGortIMXvR4'}, 
@@ -39,6 +34,7 @@ function shuffle(array) {
 }  
 
 function onYouTubeIframeAPIReady() {
+    shuffle(videoUrlList);
     player = new YT.Player('player', {
         videoId: videoUrlList[0].url,
         events: {
@@ -47,6 +43,8 @@ function onYouTubeIframeAPIReady() {
     });
     $title.textContent = videoUrlList[0].title + " by bluna";
 }
+
+onYouTubeIframeAPIReady();
 
 function onPlayerStateChange(event) {
     if (event.data == 0) {
@@ -59,5 +57,3 @@ function onPlayerStateChange(event) {
         $title.textContent = videoUrlList[currentVideoNum].title + " by bluna";
     }
 }
-
-shuffle(videoUrlList);
